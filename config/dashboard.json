@@ -1,0 +1,55 @@
+{
+    "general": {
+        "window_title": "Real-Time System Dashboard",
+        "window_width": 1400,
+        "window_height": 900,
+        "refresh_rate_fps": 60
+    },
+    "data_collection": {
+        "polling_interval_ms": 1000,
+        "process_polling_interval_ms": 2000,
+        "buffer_size": 300
+    },
+    "modules": {
+        "cpu_monitor": {
+            "enabled": true,
+            "show_per_core": true,
+            "show_average": true,
+            "show_peak": true
+        },
+        "memory_monitor": {
+            "enabled": true,
+            "show_swap": true,
+            "show_cached": true
+        },
+        "process_table": {
+            "enabled": true,
+            "max_processes": 100,
+            "default_sort_column": "cpu_percent",
+            "default_sort_order": "descending"
+        }
+    },
+    "appearance": {
+        "theme": "dark",
+        "colors": {
+            "background": "#1e1e2e",
+            "grid": "#3a3a4a",
+            "text": "#cdd6f4",
+            "cpu_line": "#89b4fa",
+            "cpu_fill": "#89b4fa40",
+            "memory_used": "#a6e3a1",
+            "memory_cached": "#f9e2af",
+            "memory_free": "#6c7086",
+            "swap_used": "#f38ba8",
+            "chart_border": "#585b70",
+            "highlight": "#cba6f7"
+        },
+        "line_width": 2.0,
+        "anti_aliasing": true
+    },
+    "export": {
+        "default_format": "csv",
+        "default_path": "./exports",
+        "include_timestamp": true
+    }
+}
