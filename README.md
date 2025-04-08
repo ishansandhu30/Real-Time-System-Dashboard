@@ -178,4 +178,3 @@ Real-Time-System-Dashboard/
 ## License
 
 MIT
-
